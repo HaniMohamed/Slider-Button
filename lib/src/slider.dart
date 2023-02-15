@@ -22,7 +22,7 @@ class SliderButton extends StatefulWidget {
   final Color buttonColor;
 
   ///Change it to gave a label on a widget of your choice.
-  final Text? label;
+  final Widget? label;
 
   ///Gives a alignment to a slider icon.
   final Alignment alignLabel;
@@ -105,7 +105,7 @@ class _SliderButtonState extends State<SliderButton> {
                   ? Shimmer.fromColors(
                       baseColor: widget.disable ? Colors.grey : widget.baseColor,
                       highlightColor: widget.highlightedColor,
-                      child: widget.label ?? Text(''),
+                      child: label ?? Text(''),
                     )
                   : widget.label,
             ),
