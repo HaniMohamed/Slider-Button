@@ -105,7 +105,7 @@ class _SliderButtonState extends State<SliderButton> {
                   ? Shimmer.fromColors(
                       baseColor: widget.disable ? Colors.grey : widget.baseColor,
                       highlightColor: widget.highlightedColor,
-                      child: label ?? Text(''),
+                      child: widget.label ?? Text(''),
                     )
                   : widget.label,
             ),
